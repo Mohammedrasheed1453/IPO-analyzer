@@ -1,0 +1,114 @@
+/* Full Page Layout */
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Left Side: Full-Height Image */
+  .login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-left img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensure full image is shown */
+  }
+  
+  /* Right Side: Login Form */
+  .login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5; /* Light background */
+  }
+  
+  /* Login Form Styling */
+  .login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-btn:hover {
+    background: #0056b3;
+  }
+  
+  .toggle-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .toggle-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-left {
+      display: none; /* Hide image on small screens */
+    }
+  
+    .login-right {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .login-form {
+      width: 100%;
+      max-width: 350px;
+    }
+    .login-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-color: violet; /* Full-page violet background */
+      }
+      
+  }
+  
